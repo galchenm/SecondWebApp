@@ -8,8 +8,8 @@ st.subheader("Developed by M. Galchenkova")
 
 st.write("This app is to convert your image to grayscale image and into a watercolor sketch.")
 
-
-camera_image = st.camera_input("Camera")
+with st.expander("Start Camera"):
+    camera_image = st.camera_input("Camera")
 
 if camera_image:
     img = Image.open(camera_image)
